@@ -60,6 +60,7 @@ class RankingMachine
     by_name = @restaurant.first
     @restaurant.sort_by! { |e| e.name.downcase}
     # to be continued ...
+    # unable to load irb session by command load 'restaurant.rb'
   end
 end
 
