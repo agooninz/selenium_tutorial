@@ -56,6 +56,11 @@ class RankingMachine
     best_restaurant
   end
 
+  def by_name
+    by_name = @restaurant.first
+    @restaurant.sort_by! { |e| e.name.downcase}
+    # to be continued ...
+  end
 end
 
 @m = Restaurant.new("chinese", "NYC", "Mohammed's Place", 2)
