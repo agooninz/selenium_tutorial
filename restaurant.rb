@@ -61,6 +61,14 @@ class RankingMachine
     @restaurant.sort_by! { |e| e.name.downcase}
     # to be continued ...
     # unable to load irb session by command load 'restaurant.rb'
+    # 2.1.0 :001 > load "restaurant.rb"
+    # /home/mohammed/.rvm/gems/ruby-2.1.0/gems/pry-0.9.12.6/lib/pry/pry_class.rb:258: warning: Insecure world writable dir /home/mohammed in PATH, mode 040777
+    # NoMethodError: undefined method `push' for #<RankingMachine:0x00000001d70298 @restaurants=[]>
+    # from restaurant.rb:70:in `<top (required)>'
+    # from (irb):1:in `load'
+    # from (irb):1
+    # from /home/mohammed/.rvm/rubies/ruby-2.1.0/bin/irb:11:in `<main>'
+
   end
 end
 
